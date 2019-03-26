@@ -41,9 +41,6 @@ public class Solution1244_최대상금 {
 			answer = 0;
 
 			bw.write("#" + t + " ");
-			if(cnt > 4) {
-				cnt = 4 + cnt%2;
-			}
 			go(cnt);
 			bw.write(answer + "\n");
 			bw.flush();
