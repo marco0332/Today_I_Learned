@@ -65,11 +65,15 @@
 Entity간에 관계를 어떻게 맺을까? -> 모델 설계  
 Entity는 Table(논리적 집합), Attribute는 Column(설계 데이터)  
   
+![image](https://user-images.githubusercontent.com/27988544/56466471-8baad980-644d-11e9-808b-fa6fec4510b1.png)  
 관계는 Column을 공유함으로써 만들 수 있다.
 이때 식별자는 PK(Primary key),  
 부모로부터 자식으로 전이된 Column을 FK(Foreign key)라고 함.  
+각 Entity의 속성 중 고유값을 가져오는 방식으로 관계를 연결함.  
   
 여기서 N:M의 관계는 PK가 위배되기 때문에 1:N:1 관계로 만든다.  
   
 Q RDB가 성공한 이유?  
-DBMS에 '통신'기능을 넣었고, DB를 별도의 서버로 운영하는 것이 가능해졌다.  (Stand alone Database)
+- DBMS에 '통신'기능을 넣었고, DB를 별도의 서버로 운영하는 것이 가능해졌다.  (Standalone Database)  
+- SQL(Standard Query Language, 구조화 쿼리 언어)를 만들어서 DBMS에 접근하는 API를 통일시켰다.  
+  
