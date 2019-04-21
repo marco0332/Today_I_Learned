@@ -57,3 +57,9 @@ Drop table SampleTable;
   
 select를 통해 데이터를 찾을 경우, 테이블에 입력된 순선에 따라 나온다.  
 그래서 결과 'Order by asc | desc'를 통해 정렬할 수 있다.
+  
+  
+#### 비교하는 다양한 방법  
+  
+  
++alpha_3 : null은 =, > 등 비교를 할 수 없는 데이터이다. 따라서 'attri <b>is null</b>'하면 찾을 수 있다.  
