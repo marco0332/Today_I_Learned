@@ -76,4 +76,6 @@ Entity는 Table(논리적 집합), Attribute는 Column(설계 데이터)
 Q RDB가 성공한 이유?  
 - DBMS에 '통신'기능을 넣었고, DB를 별도의 서버로 운영하는 것이 가능해졌다.  (Standalone Database)  
 - SQL(Standard Query Language, 구조화 쿼리 언어)를 만들어서 DBMS에 접근하는 API를 통일시켰다.  
+즉, SQL만 알면 어떤 DBMS든 접근 가능하다!  
   
+=> 각 언어를 DBMS, SQL과 연결시켜줄 Driver가 필요하다. Java는 JDBC.  
