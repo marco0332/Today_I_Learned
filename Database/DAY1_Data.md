@@ -23,7 +23,7 @@
   -> 정렬을 위해 사람이 데이터에서 순서의 기준을 정할 뿐. 부모-자식 관계라는 것이 데이터 자체에는 없다.  
   
   
----
+***
 ### # 데이터 구조
 #### 1. HDB(Hierarchical Database, 계층형 데이터베이스)  
 ![image](https://user-images.githubusercontent.com/27988544/56466020-82b60a00-6445-11e9-8dae-b4b860fac238.png)  
@@ -44,5 +44,21 @@
 - 데이터 자체에는 순서나 높낮이가 없지만, 의미상(논리적으로) 데이터들의 집합을 만들 수 있다는 것에서 나온 모델.  
   
 #### 3. RDB(Relational Database, 관계형 데이터베이스)  
-![image](https://user-images.githubusercontent.com/27988544/56466071-74b4b900-6446-11e9-8efa-ef8d90a45549.png)  
+![image](https://user-images.githubusercontent.com/27988544/56466107-f4db1e80-6446-11e9-8258-2b537739959e.png)  
   
+- 테이블들이 Tree를 구성  
+- HDB와 NDB의 장점을 결합.  
+- 대표적으로 Oracle  
+- 하나의 객체(Entity)는 여러 데이터들을 가지고 있을 수 있음(ex. 학생 {학번, 성별, 이름, 전공 ...})  
+![image](https://user-images.githubusercontent.com/27988544/56466133-6ca94900-6447-11e9-8a10-ea43447d7597.png)  
+  
+그런데 보통 Entity는 여러개를 만들기 위한 툴이고, 우리는 이것을 '찾아'써야 한다.  
+따라서 이 Entity들을 구별하기 위한 '식별자'가 필요하다.  
+이때 , 식별자는 Entity를 찾을 수 있어야하므로 '고유(Unique)'해야 한다.  
+그래서 1개 이상의 속성을 식별자로 사용할 수 있다.  
+  
+  `TODO. 기초속성과 설계속성에 대해 알아보기`  
+  
+  
+***
+### # 모델 
