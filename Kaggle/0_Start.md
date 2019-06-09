@@ -19,5 +19,21 @@
   
 ### # 시작 전에
 나는 어떤 공부를 하던지 계획을 세우지 않으면 흐지부지 되는 경향이 있다.  
-지금부터 하반기 지원까지 남은 시간은 대략 3개월.  
+지금부터 하반기 지원까지 남은 시간은 대략 3개월.(12주)  
   
+1. 시작 ~ 6주차 : Kaggle inclass competition에 참가해서 실력 쌓기(최소 1주일에 1개). 되도록 상위권에 오를 수 있도록!  
+                 이 때 제일 공부 많이해야 할 것은 데이터 분석 및 시각화.  
+                 
+2. 7주차 ~ 12주 : General Competition에 참가해서 상위권 노려보기!  
+                 이미지 데이터 다루는 competition, 그리고 문자열 다루는 competition 이런 식으로 데이터가 다른 것 시도해보기.
+  
+  일단 1번에 대한 구체적인 계획 (현재 2019-06-09)
+  1. <a href="https://www.kaggle.com/c/titanic">Titanic: Machine Learning from Disaster</a>
+  2. <a href="https://www.kaggle.com/c/nicht-mnist">Nicht MNIST!</a>
+  3. <a href="https://www.kaggle.com/c/ml-hack-2019/leaderboard">ML Hackathon 2019 Q1</a>
+  4. <a href="https://www.kaggle.com/c/multinli-matched-open-evaluation/overview">MultiNLI Matched Open Evaluation</a>
+  5. <a href="https://www.kaggle.com/c/home-data-for-ml-course/leaderboard">Housing Prices Competition for Kaggle Learn Users</a>
+  6. <a href="https://www.kaggle.com/c/catch-me-if-you-can-intruder-detection-through-webpage-session-tracking2/leaderboard">Catch Me If You Can</a>
+  
+  2번에서 참가하고 싶은 competition
+  1. <a href="https://www.kaggle.com/c/open-images-2019-object-detection/leaderboard">Open Images 2019 - Object Detection _ Google Research</a>
