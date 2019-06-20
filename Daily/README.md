@@ -4,9 +4,12 @@
 <br><b>F : 계단, PU : 팔굽혀펴기</b></br>
 <br><b>계단 목표 : 2950층 (8,848m _ 히말라야)</b></br>
 <br><b>팔굽 목표 : 10000개 (팔굽혀펴기로 만보기를...)</b></br>
-<pre><code>현재 _ F:1715 PU:3186</code></pre>
+<pre><code>현재 _ F:1755 PU:3186</code></pre>
 <br></br>
 
+<br>2019.06.20목 F20</br>
+<br>2019.06.19수 ST Unitas AI Researcher Team 면접</br>
+<br>2019.06.18화 F20</br>
 <br>2019.06.11화 누가 나를 칭찬했었다. 기분 좋다</br>
 ![칭찬](https://user-images.githubusercontent.com/27988544/59256918-e99ab700-8c6f-11e9-8e7a-1557a5ef7cf6.PNG)
 <br>2019.06.10월 F8 + 현대오토에버 기업탐방</br>
