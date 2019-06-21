@@ -29,6 +29,56 @@
   Scripts\activate.bat<br>
   
   
-  ### 첫번째 시도!
+  ### 첫번째 시도! (2019-06-20)
   ![image](https://user-images.githubusercontent.com/27988544/59836793-24df6900-9387-11e9-8687-f42cc8bfc563.png)
   공부를 좀 더 해야할 듯. 어떻게 하면 성능을 높일 수 있을지, tensorflow로 기본부터 코딩하는 것도 좋을 듯.
+  <br>
+  
+  ### 두번째 시도! (2019-06-21)
+  
+  <details>
+  <summary> Faster R-CNN 이론 및 구현</summary>
+  <p>
+  
+  #### Faster R-CNN 구현해보기
+  Object Detection에는 여러 알고리즘이 있다. R-CNN, YOLO 등등.  
+  최초가 된 분석 방법은 R-CNN이고, selective search의 단점을 보오나하면서 속도를 올린게 Faster R-CNN이다.  
+  Faster R-CNN은 정확도가 높지만 YOLO보다는 느리다. (속도와 정확도의 trade-off)  
+  캐글에서 요구하는 것은 '정확도'이므로, 우리는 R-CNN과 같은 2-stage 모델을 우선적으로 구현해보기로 했다.  
+  <br>
+  
+  #### Architecture
+  Faster R-CNN은 두개의 네트워크로 구성이 되어 있다.  
+  - Deep Convolution Network로서 Region Proposal Network (RPN)
+  - Fast R-CNN Detector로서 앞의 proposed regions을 사용해서 object를 탐색
+  <br>
+  
+  Faster R-CNN에는 2개의 모듈이 존재하지만, 전체적으로는 하나의 object detection network라고 볼 수 있음.  
+  이게 중요한 이유는 Faster R-CNN 이후부터 fully differentiable model이기 때문이다.  
+  ![image](https://user-images.githubusercontent.com/27988544/59889077-9100b200-9405-11e9-80a0-ac8bc9c4b4db.png)
+    
+  <br>
+  <b>1. Input Images</b>
+  
+  - H x W x D를 갖고 있는, RGB Image<br><br>
+    
+  <b>2. Base Network (Shared Network)</b>
+  
+  - Name Meaning : selective search를 통해 나온 수천개 각각의 region proposals마다 CNN을 사용해서 forward pass를 했었던 이전 모델. 또한 3개의 모델(feature를 뽑아내는 CNN, 어떤 class인지 알아내는 classifier, bounding boxes를 예측하는 regression model)을 각각 학습시켜야 했음.  <br>Fast R-CNN에서는 중복되는 연산을 하나의 CNN으로 해결. 즉 이미지를 가장 먼저 받아서 feature를 뽑아내는 일을 하기 때문에 base network 또는 중복되는 일을 하나의 CNN에서 처리하기 때문에 shared network라고 함.<br><br>  
+  
+  <b>3. How it works</b><br>
+  - Base network가 하는 일은 특징 추출이다. 중요한 것은 pretrained model을 사용해야 한다는 것. (transfer learning과 유사)  <br>모델은 기존의 모델을 주로 사용. ResNet, VGG, Inception 등. 다만 찾고자 하는 object의 feature를 뽑아내야 하기 때문에 이미 해당 object를 학습해놓은 상태여야 함.<br>
+  
+  ![image](https://user-images.githubusercontent.com/27988544/59889204-3ddb2f00-9406-11e9-8191-0b08195afe94.png)<br><br>
+  <b>4. Region Proposal Network</b>
+  - RPN은 conv를 통해 구현하며, input은 이전 base network에서 뽑아낸 feature maps를 사용. Region proposals을 생성하기 위해서는 base network에서 생성한 feature maps위에 n x n spatial window (보통 3 x 3)를 슬라이드 시킨다. 각각의 sliding-window가 찍은 지점마다, 한번에 여러개의 region proposals을 예측하게 된다. Region proposals의 최고 갯수는 k로 나타내며, 이것을 <b>Anchor</b>라고 부른다. 보통 각 sliding window의 지점마다 9개의 anchors가 존재하며, 3개의 서로 다른 종횡비 (aspect ratios) 그리고 3개의 서로 다른 크기 (scales)가 조합되며 모두 동일한 중앙지점을 가지게 됨.<br>
+  ![image](https://user-images.githubusercontent.com/27988544/59889289-ade9b500-9406-11e9-81a4-7fd5cfb3187c.png)<br>
+  <br>
+  Sliding window를 통해 나온 feature map의 depth는 더 낮은 차원이 됨( ex) 512 depth -> 256 depth ) 이후의 output 값은 1 x 1 kernel을 갖고 있는 두개의 convolutional layers로 양분되어 들어가게 된다.  
+  <br>
+  <b>Classification layer</b>에서는 anchor당 2개의 predictions값을 내놓으며, 객체인지에 대한 확률값을 의미.  
+  <br>
+  Regeression layer (또는 bounding box adjustment layer)는 각 anchor당 델타값들 <sub>x<sub>center</sub></sub>, <sub>y<sub>center</sub></sub>, <sub>width</sub>, <sub>height</sub> 4개의 값을 구함. 이 델타 값들은 anchors에 적용이 되어서 최종 proposals을 얻게 된다.
+  
+  </p>
+  </details>
