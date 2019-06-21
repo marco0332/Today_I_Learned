@@ -1,4 +1,4 @@
-### 1st. 2019-06-16 일요일
+﻿### 1st. 2019-06-16 일요일
 ![image](https://user-images.githubusercontent.com/27988544/59562432-acfffe80-9067-11e9-9166-ef8c9efa5565.png)
 ![image](https://user-images.githubusercontent.com/27988544/59562425-88a42200-9067-11e9-9ec7-ba637aa48247.png)
   
@@ -29,3 +29,6 @@
   Scripts\activate.bat<br>
   
   
+  ### 첫번째 시도!
+  ![image](https://user-images.githubusercontent.com/27988544/59836793-24df6900-9387-11e9-8687-f42cc8bfc563.png)
+  공부를 좀 더 해야할 듯. 어떻게 하면 성능을 높일 수 있을지, tensorflow로 기본부터 코딩하는 것도 좋을 듯.
