@@ -9,6 +9,11 @@
   <a href="https://github.com/stupid07">이종연</a>
   
   ### 스터디 1일차
+  <details>
+  <summary>개요 및 첫 성적</summary>
+  
+  <p>
+  
   Object Detection은 Bounding Box를 예측하면서 동시에 Box 안의 Object의 class를 예측하는 작업.
   ![fig1_cv_task](https://user-images.githubusercontent.com/27988544/59810455-3d786080-9340-11e9-95b8-04227a0a5de9.png)
   
@@ -29,12 +34,15 @@
   Scripts\activate.bat<br>
   
   
-  ### 첫번째 시도! (2019-06-20)
+  ## 첫번째 시도! (2019-06-20)
   ![image](https://user-images.githubusercontent.com/27988544/59836793-24df6900-9387-11e9-8687-f42cc8bfc563.png)
   공부를 좀 더 해야할 듯. 어떻게 하면 성능을 높일 수 있을지, tensorflow로 기본부터 코딩하는 것도 좋을 듯.
   <br>
   
-  ### 두번째 시도! (2019-06-21)
+  </p>
+  </details>
+  
+  ## 두번째 시도! (2019-06-21)
   
   <details>
   <summary> Faster R-CNN 이론 및 구현</summary>
