@@ -28,6 +28,7 @@
                  이미지 데이터 다루는 competition, 그리고 문자열 다루는 competition 이런 식으로 데이터가 다른 것 시도해보기.
   
   일단 1번에 대한 구체적인 계획 (현재 2019-06-09)
+  ++ 추가 0. <a href="https://www.kaggle.com/c/2019-3rd-ml-month-with-kakr">2019 3rd ML month with KaKR</a> (2019-06-20 시작)
   1. <a href="https://www.kaggle.com/c/titanic">Titanic: Machine Learning from Disaster</a>
   2. <a href="https://www.kaggle.com/c/nicht-mnist">Nicht MNIST!</a>
   3. <a href="https://www.kaggle.com/c/ml-hack-2019/leaderboard">ML Hackathon 2019 Q1</a>
