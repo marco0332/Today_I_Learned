@@ -8,7 +8,7 @@
   <a href="#">이상호</a>
   <a href="https://github.com/stupid07">이종연</a>
   
-  ### 스터디 1일차
+  ## 스터디 1일차 (2019-06-20)
   <details>
   <summary>개요 및 첫 성적</summary>
   
@@ -34,7 +34,7 @@
   Scripts\activate.bat<br>
   
   
-  ## 첫번째 시도! (2019-06-20)
+  ### 첫번째 시도!
   ![image](https://user-images.githubusercontent.com/27988544/59836793-24df6900-9387-11e9-8687-f42cc8bfc563.png)
   공부를 좀 더 해야할 듯. 어떻게 하면 성능을 높일 수 있을지, tensorflow로 기본부터 코딩하는 것도 좋을 듯.
   <br>
@@ -42,7 +42,7 @@
   </p>
   </details>
   
-  ## 두번째 시도! (2019-06-21)
+  ## 스터디 2일차 (2019-06-21)
   
   <details>
   <summary> Faster R-CNN 이론 및 구현</summary>
@@ -87,6 +87,61 @@
   <b>Classification layer</b>에서는 anchor당 2개의 predictions값을 내놓으며, 객체인지에 대한 확률값을 의미.  
   <br>
   Regeression layer (또는 bounding box adjustment layer)는 각 anchor당 델타값들 <sub>x<sub>center</sub></sub>, <sub>y<sub>center</sub></sub>, <sub>width</sub>, <sub>height</sub> 4개의 값을 구함. 이 델타 값들은 anchors에 적용이 되어서 최종 proposals을 얻게 된다.
+  
+  ![image](https://user-images.githubusercontent.com/27988544/59890063-29009a80-940a-11e9-9684-df3dc27012c0.png)
+  <br>
+  
+  <b>4. Classifier of Background and Foreground</b><br>
+  Classifier를 학습시키기 위한 training data는 바로 위의 RPN으로 부터 얻은 anchors와 ground-truth boxes 이다.  
+  모든 anchors를 foreground이냐 또는 background이냐로 분류를 해야함. 분류를 하는 기준은 anchor가 ground-truth box와 오버랩되는 부분이 크면 foreground기ㅗ, 적으면 background이다. 각각의 anchor마다 foreground인지 아니면 background인지 구별하는 값을 p<sup>*</sup> 값이라고 했을 때 공식은 다음과 같다.<br>
+  <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <msup>
+    <mi>p</mi>
+    <mo>&#x2217;<!-- ∗ --></mo>
+  </msup>
+  <mo>=</mo>
+  <mrow>
+    <mo>{</mo>
+    <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">
+      <mtr>
+        <mtd>
+          <mn>1</mn>
+        </mtd>
+        <mtd>
+          <mtext>if&#xA0;</mtext>
+          <mi>I</mi>
+          <mi>o</mi>
+          <mi>U</mi>
+          <mo>&#x003E;<!-- > --></mo>
+          <mn>0.7</mn>
+        </mtd>
+      </mtr>
+      <mtr>
+        <mtd>
+          <mo>&#x2212;<!-- − --></mo>
+          <mn>1</mn>
+        </mtd>
+        <mtd>
+          <mtext>if&#xA0;</mtext>
+          <mi>I</mi>
+          <mi>o</mi>
+          <mi>U</mi>
+          <mo>&#x003C;<!-- < --></mo>
+          <mn>0.3</mn>
+        </mtd>
+      </mtr>
+      <mtr>
+        <mtd>
+          <mn>0</mn>
+        </mtd>
+        <mtd>
+          <mtext>if otherwise</mtext>
+        </mtd>
+      </mtr>
+    </mtable>
+    <mo fence="true" stretchy="true" symmetric="true"></mo>
+  </mrow>
+</math>
   
   </p>
   </details>
