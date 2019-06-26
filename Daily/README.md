@@ -7,6 +7,7 @@
 <pre><code>현재 _ F:1775 PU:3246</code></pre>
 <br></br>
 
+<br>2019.06.24 ~ 27 예비군</br>
 <br>2019.06.21금 F20, PU40</br>
 <br>2019.06.20목 F20, PU20</br>
 <br>2019.06.19수 ST Unitas AI Researcher Team 면접</br>
