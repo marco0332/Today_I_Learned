@@ -9,6 +9,7 @@
 
 <br>2019.07.02 F20</br>
 <br>2019.07.01 F20</br>
+<br>2019.06.28 ST Unitas Culture Fit Interview</br>
 <br>2019.06.24 ~ 27 예비군</br>
 <br>2019.06.21금 F20, PU40</br>
 <br>2019.06.20목 F20, PU20</br>
