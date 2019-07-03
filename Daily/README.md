@@ -4,12 +4,13 @@
 <br><b>F : 계단, PU : 팔굽혀펴기</b></br>
 <br><b>계단 목표 : 2950층 (8,848m _ 히말라야)</b></br>
 <br><b>팔굽 목표 : 10000개 (팔굽혀펴기로 만보기를...)</b></br>
-<pre><code>현재 _ F:1815 PU:3246</code></pre>
+<pre><code>현재 _ F:1845 PU:3246</code></pre>
 <br></br>
 
-<br>2019.07.02 F20</br>
-<br>2019.07.01 F20</br>
-<br>2019.06.28 ST Unitas Culture Fit Interview</br>
+<br>2019.07.03수 F30 + ST Unitas 합격</br>
+<br>2019.07.02화 F20</br>
+<br>2019.07.01월 F20</br>
+<br>2019.06.28금 ST Unitas Culture Fit Interview</br>
 <br>2019.06.24 ~ 27 예비군</br>
 <br>2019.06.21금 F20, PU40</br>
 <br>2019.06.20목 F20, PU20</br>
