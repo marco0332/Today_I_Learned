@@ -4,9 +4,11 @@
 <br><b>F : 계단, PU : 팔굽혀펴기</b></br>
 <br><b>계단 목표 : 2950층 (8,848m _ 히말라야)</b></br>
 <br><b>팔굽 목표 : 10000개 (팔굽혀펴기로 만보기를...)</b></br>
-<pre><code>현재 _ F:2157 PU:3326</code></pre>
+<pre><code>현재 _ F:2197 PU:3326</code></pre>
 <br></br>
 
+<br>2019.07.31수 F20</br>
+<br>2019.07.30화 F20</br>
 <br>2019.07.29월 F24, PU20</br>
 ![image](https://user-images.githubusercontent.com/27988544/62039799-51628c80-b233-11e9-8dc1-f32237904a8d.png)
 벌써 7월이 끝나간다. 깃허브도 잔디밭, 깃랩도 잔디밭.</br>
