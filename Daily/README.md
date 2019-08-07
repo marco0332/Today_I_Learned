@@ -48,6 +48,9 @@
 <br>2019.06.18화 F20</br>
 <br>2019.06.11화 누가 나를 칭찬했었다. 기분 좋다</br>
 ![칭찬](https://user-images.githubusercontent.com/27988544/59256918-e99ab700-8c6f-11e9-8e7a-1557a5ef7cf6.PNG)
+![image](https://user-images.githubusercontent.com/27988544/62585413-96518780-b8f3-11e9-84c0-b9eafc163f11.png)
+![image](https://user-images.githubusercontent.com/27988544/62585431-a9fcee00-b8f3-11e9-95c9-91d423d204af.png)
+
 <br>2019.06.10월 F8 + 현대오토에버 기업탐방</br>
 <br>2019.06.07금 F20 + 풋살!!, 손목이 점점 아파진다.. 몸 관리! 자기관리!!</br>
 <br>2019.06.06목 F20</br>
