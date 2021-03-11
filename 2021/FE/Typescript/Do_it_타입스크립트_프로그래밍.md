@@ -53,3 +53,5 @@ type AnimalAndPerson = Animal & Person // intersection type
   - ADT란 추상 데이터 타입을 의미하기도 하지만 대수 타입(algebraic data type)이라는 의미로도 사용된다.
   - 대수 타입이란 다른 자료형의 값을 가지는 자료형을 의미한다.
   - 합집합 타입(union 또는 sum type)과 교집합 타입(intersection 또는 product type) 두 가지가 있다.
+
+## 2. 타입스크립트 프로젝트 생성과 관리
